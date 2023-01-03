@@ -3,98 +3,97 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
 
-[assembly: InternalsVisibleTo("Spout.NET")]
-
 #pragma warning disable IDE1006
 #pragma warning disable IDE0060
 #pragma warning disable CA2101
-#pragma warning disable CA1050
 #pragma warning disable CA1507
 
-public unsafe partial class SHELLEXECUTEINFOA
+[assembly: InternalsVisibleTo("Spout.NET")]
+namespace Spout.NET
 {
-    [StructLayout(LayoutKind.Explicit, Size = 112)]
-    public partial struct __Internal
+    public unsafe partial class SHELLEXECUTEINFOA
     {
-        [FieldOffset(0)]
-        internal uint cbSize;
-
-        [FieldOffset(4)]
-        internal uint fMask;
-
-        [FieldOffset(8)]
-        internal IntPtr hwnd;
-
-        [FieldOffset(16)]
-        internal IntPtr lpVerb;
-
-        [FieldOffset(24)]
-        internal IntPtr lpFile;
-
-        [FieldOffset(32)]
-        internal IntPtr lpParameters;
-
-        [FieldOffset(40)]
-        internal IntPtr lpDirectory;
-
-        [FieldOffset(48)]
-        internal int nShow;
-
-        [FieldOffset(56)]
-        internal IntPtr hInstApp;
-
-        [FieldOffset(64)]
-        internal IntPtr lpIDList;
-
-        [FieldOffset(72)]
-        internal IntPtr lpClass;
-
-        [FieldOffset(80)]
-        internal IntPtr hkeyClass;
-
-        [FieldOffset(88)]
-        internal uint dwHotKey;
-
-        [FieldOffset(96)]
-        internal _0.__Internal _0;
-
-        [FieldOffset(104)]
-        internal IntPtr hProcess;
-    }
-
-    public unsafe partial struct _0
-    {
-        [StructLayout(LayoutKind.Explicit, Size = 8)]
+        [StructLayout(LayoutKind.Explicit, Size = 112)]
         public partial struct __Internal
         {
             [FieldOffset(0)]
-            internal IntPtr hIcon;
+            internal uint cbSize;
 
-            [FieldOffset(0)]
-            internal IntPtr hMonitor;
+            [FieldOffset(4)]
+            internal uint fMask;
+
+            [FieldOffset(8)]
+            internal IntPtr hwnd;
+
+            [FieldOffset(16)]
+            internal IntPtr lpVerb;
+
+            [FieldOffset(24)]
+            internal IntPtr lpFile;
+
+            [FieldOffset(32)]
+            internal IntPtr lpParameters;
+
+            [FieldOffset(40)]
+            internal IntPtr lpDirectory;
+
+            [FieldOffset(48)]
+            internal int nShow;
+
+            [FieldOffset(56)]
+            internal IntPtr hInstApp;
+
+            [FieldOffset(64)]
+            internal IntPtr lpIDList;
+
+            [FieldOffset(72)]
+            internal IntPtr lpClass;
+
+            [FieldOffset(80)]
+            internal IntPtr hkeyClass;
+
+            [FieldOffset(88)]
+            internal uint dwHotKey;
+
+            [FieldOffset(96)]
+            internal _0.__Internal _0;
+
+            [FieldOffset(104)]
+            internal IntPtr hProcess;
+        }
+
+        public unsafe partial struct _0
+        {
+            [StructLayout(LayoutKind.Explicit, Size = 8)]
+            public partial struct __Internal
+            {
+                [FieldOffset(0)]
+                internal IntPtr hIcon;
+
+                [FieldOffset(0)]
+                internal IntPtr hMonitor;
+            }
         }
     }
-}
 
 
-public enum D3DFORMAT
-{
-}
+    public enum D3DFORMAT
+    {
+    }
 
-public enum D3D_FEATURE_LEVEL
-{
-}
+    public enum D3D_FEATURE_LEVEL
+    {
+    }
 
-public enum D3D_DRIVER_TYPE
-{
-}
+    public enum D3D_DRIVER_TYPE
+    {
+    }
 
-public enum DXGI_FORMAT
-{
-}
+    public enum DXGI_FORMAT
+    {
+    }
 
-namespace Spout.NET
-{
+
     public enum SpoutCreateResult
     {
         SPOUT_CREATE_FAILED = 0,
@@ -6437,5 +6436,4 @@ namespace Spout.NET
 #pragma warning restore IDE1006
 #pragma warning restore IDE0060
 #pragma warning restore CA2101
-#pragma warning restore CA1050
 #pragma warning restore CA1507
